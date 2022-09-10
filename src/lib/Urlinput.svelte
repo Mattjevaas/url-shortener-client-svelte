@@ -2,7 +2,7 @@
     let value = ""
 
     async function createShortUrl() {
-		const res = await fetch(`http://127.0.0.1:8080/save`,{
+		const res = await fetch(`https://shorty.johaneswiku.com/save`,{
             method: 'POST',
             cache: 'no-cache',
             headers: {
@@ -16,7 +16,7 @@
         //console.log(response)
 
 		if (response.code == 200) {
-			return `johaneswiku.com/${response.data.short_url}`;
+			return `https://shorty.johaneswiku.com/${response.data.short_url}`;
 		} else {
 			throw new Error(response.status);
 		}
@@ -40,7 +40,7 @@
 
 {#if promise != null}
     {#await promise}
-        <p>creating URL ...</p>
+        <p>Creating URL ...</p>
     {:then value}
         <p>Your Short URL:  <a href={value} target="_blank" >{value}</a></p>
     {:catch error}

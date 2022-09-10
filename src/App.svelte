@@ -10,7 +10,7 @@
   </div>
 
   <p>
-    Check out my <a href="https://github.com/sveltejs/kit#readme" target="_blank"> Github </a>repositories
+    Check out my <a href="https://github.com/Mattjevaas/url-shortener-client-svelte" target="_blank"> Github </a>repositories
   </p>
 
   <p class="read-the-docs">
